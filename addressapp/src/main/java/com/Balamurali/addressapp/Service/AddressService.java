@@ -23,4 +23,9 @@ public class AddressService {
 		return addressResponse;
 	}
 
+	public String postAddressForEmployee(AddressResponse addressResponse) {
+		AddressDetails address= modelMapper.map(addressResponse, AddressDetails.class);
+		addressRepo.save(address);
+		return "addressResponse added Sucessfully";
+	}
 }

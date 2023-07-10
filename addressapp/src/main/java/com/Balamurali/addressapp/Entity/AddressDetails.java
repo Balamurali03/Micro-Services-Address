@@ -24,5 +24,7 @@ public class AddressDetails {
 	private String state;
 	@Column(name ="zip")
 	private String zip;
+	@Column(name ="employee_id")
+	private int employeeid;
 
 }
